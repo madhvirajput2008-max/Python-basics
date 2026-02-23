@@ -1,0 +1,43 @@
+def calculate_result():
+    name = input("Enter Student Name: ")
+    
+    print("Enter marks of 5 subjects:")
+    m1 = float(input("maths: "))
+    m2 = float(input("physics: "))
+    m3 = float(input("chemistry: "))
+    m4 = float(input("computer: "))
+    m5 = float(input("english: "))
+    
+    total = m1 + m2 + m3 + m4 + m5
+    percentage = total / 5
+    
+   
+    if percentage >= 90:
+        grade = "A+"
+    elif percentage >= 80:
+        grade = "A"
+    elif percentage >= 70:
+        grade = "B"
+    elif percentage >= 60:
+        grade = "C"
+    elif percentage >= 50:
+        grade = "D"
+    else:
+        grade = "Fail"
+    
+    
+    if m1 < 33 or m2 < 33 or m3 < 33 or m4 < 33 or m5 < 33:
+        result = "Fail (Less than 33 in one subject)"
+    else:
+        result = "Pass"
+    
+    print("\n------ RESULT ------")
+    print("Name:", name)
+    print("Total Marks:", total)
+    print("Percentage:", percentage)
+    print("Grade:", grade)
+    print("Final Result:", result)
+
+
+
+calculate_result()
