@@ -1,0 +1,70 @@
+def kohli_game_silent():
+    total_questions = 5
+    correct = 0
+
+    print(" KING KOHLI – SILENT LEGACY MODE ")
+    print("Unlock the unheard story by answering ALL correctly.\n")
+
+    # Q1 - 2022 IND vs PAK
+    print("2022 IND vs PAK - Exact runs & balls?")
+    ans1 = input("A) 82*(53)  B) 82*(52)  C) 81*(53): ").upper()
+    if ans1 == "A":
+        correct += 1
+    else:
+        print("Wrong.\n")
+
+    # Q2 - 2016 T20 WC
+    print("\n 2016 T20 WC vs AUS - Approx strike rate range?")
+    ans2 = input("A) 150-155  B) 155-165  C) 165-175: ").upper()
+    if ans2 == "B":
+        correct += 1
+    else:
+        print("Wrong.\n")
+
+    # Q3 - 2023 WC Final
+    print("\n 2023 WC Final - Kohli dismissal detail?")
+    ans3 = input("A) 54 (b Cummins, inside edge)  B) 63 (c Smith)  C) 75 (lbw Starc): ").upper()
+    if ans3 == "A":
+        correct += 1
+    else:
+        print("Wrong.\n")
+
+    # Q4 - 50th Century 
+    print("\n50th ODI Century venue?")
+    ans4 = input("A) Eden Gardens  B) Wankhede Stadium  C) Narendra Modi Stadium: ").upper()
+    if ans4 == "B":
+        correct += 1
+    else:
+        print("Wrong.\n")
+
+    # Q5 -  RCB 
+    print("\n RCB - From 2008 to 2024 inclusive,")
+    print("how many IPL seasons did Kohli stay without lifting a trophy?")
+    ans5 = input("A) 16 seasons  B) 17 seasons  C) 18 seasons: ").upper()
+    if ans5 == "B":
+        correct += 1
+    else:
+        print("Wrong.\n")
+
+    print("\nCorrect Answers:", correct, "/", total_questions)
+
+    if correct == total_questions:
+        print("\nCONGRATS..! UNHEARD SILENT STORY UNLOCKED \n")
+
+        print("Nobody saw the silent nights when Virat trained alone.")
+        print("After loud stadium cheers faded, he stayed back in empty nets.")
+        print("There were days he questioned himself, but never his effort.")
+        print("In 2014 England tour struggles, he silently rebuilt his game.")
+        print("When critics doubted, he answered with fitness and discipline.")
+        print("RCB’s 17 silent seasons weren’t just losses,")
+        print("they were lessons in loyalty and leadership without excuses.")
+        print("In heartbreak finals, he walked off quietly,")
+        print("but inside him burned a fire stronger than any trophy.")
+        print("The world saw aggression; few saw the silent warrior within.")
+        print("Legends aren’t built in noise — they are forged in silence.")
+
+    else:
+        print("\n STORY LOCKED ")
+        print("The silent legacy belongs only to the true believers.")
+
+kohli_game_silent()
