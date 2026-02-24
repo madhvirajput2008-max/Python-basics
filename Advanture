@@ -1,0 +1,46 @@
+def adventure_game():
+    print("WELCOME TO THE LOST TEMPLE ADVENTURE ")
+    print("You are standing in front of a mysterious jungle.")
+    
+    choice1 = input("\nDo you want to ENTER the jungle or RETURN home? (enter/return): ").lower()
+    
+    if choice1 == "enter":
+        print("\nYou walk into the jungle and find a dark cave.")
+        
+        choice2 = input("Do you ENTER the cave or WALK ahead? (cave/walk): ").lower()
+        
+        if choice2 == "cave":
+            print("\nInside the cave you find a treasure chest!")
+            
+            choice3 = input("Do you OPEN it or LEAVE it? (open/leave): ").lower()
+            
+            if choice3 == "open":
+                print("\n Congratulations! You found hidden treasure! YOU WIN!")
+            elif choice3 == "leave":
+                print("\nYou walk away safely but miss the treasure. Game Over.")
+            else:
+                print("\nInvalid choice. Game Over.")
+        
+        elif choice2 == "walk":
+            print("\nYou encounter a wild animal!")
+            
+            choice4 = input("Do you RUN or FIGHT? (run/fight): ").lower()
+            
+            if choice4 == "run":
+                print("\nYou escaped safely! But adventure ends here.")
+            elif choice4 == "fight":
+                print("\n The animal was too strong. You lost.")
+            else:
+                print("\nInvalid choice. Game Over.")
+        
+        else:
+            print("\nInvalid choice. Game Over.")
+    
+    elif choice1 == "return":
+        print("\nYou chose safety over adventure. Maybe next time!")
+    
+    else:
+        print("\nInvalid choice. Game Over.")
+
+
+adventure_game()
